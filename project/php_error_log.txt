@@ -1,0 +1,4 @@
+[05-Jan-2025 15:12:38 Europe/Berlin] Cannot delete or update a parent row: a foreign key constraint fails (`qashan_db`.`order_details`, CONSTRAINT `prod_orderdetails_constraint` FOREIGN KEY (`prodid`) REFERENCES `products` (`id`))
+[05-Jan-2025 19:22:55 Europe/Berlin] PHP Warning:  Undefined variable $admins in C:\xampp\htdocs\web_projects\Qashan_Ceramics_And_Artworks\get_clients.php on line 38
+[05-Jan-2025 19:22:56 Europe/Berlin] PHP Warning:  Undefined variable $admins in C:\xampp\htdocs\web_projects\Qashan_Ceramics_And_Artworks\get_clients.php on line 38
+[05-Jan-2025 19:22:57 Europe/Berlin] PHP Warning:  Undefined variable $c in C:\xampp\htdocs\web_projects\Qashan_Ceramics_And_Artworks\get_clients.php on line 38

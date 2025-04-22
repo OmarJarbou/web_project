@@ -1,0 +1,155 @@
+/* Main Container */
+.main-container {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    grid-area: mainc;
+}
+
+/* Header Filters */
+.main-container .filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-container .filter-buttons button {
+    background-color: #ddd;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.main-container .filter-buttons button.active {
+    background-color: var(--secondary-color);
+    color: white;
+}   
+
+/* Product Cards Container */
+#card-container {
+    /*height: auto;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+/* Individual Card */
+.main-container .card {
+    position: relative;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.main-container .card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    /* animation: loading_border 2s ease-in 0s 1 normal none; */
+}
+/* @keyframes loading_border {
+    0% {
+        border-top-width: 5px;
+        border-color: var(--primary-color); 
+    }
+    25% {
+        border-right-width: 5px;
+        border-color: var(--primary-color); 
+    }
+    50% {
+        border-bottom-width: 5px;
+        border-color: var(--primary-color); 
+    }
+    75% {
+        border-left-width: 5px;
+        border-color: var(--primary-color); 
+    }
+    100% {
+        border-top-width: 5px;
+        border-color: var(--primary-color); 
+    }
+}     */
+
+.main-container .card img {
+    width: 100%;
+    height: 200px;/*auto*/
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.main-container .card-content {
+    padding: 10px;
+}
+
+.main-container .card-content h4 {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.main-container .card .price-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.main-container .card .action-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Pagination */
+#pagination {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pagination button{
+    display: inline-block;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-width: 0px;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: #555;
+    cursor: pointer;
+    font-weight: bold;
+}
+#pagination button:hover {
+    background-color: var(--primary-color);
+    color: white;
+} 
